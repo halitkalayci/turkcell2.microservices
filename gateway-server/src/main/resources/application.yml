@@ -3,7 +3,6 @@ spring:
     name: "gateway-server"
   cloud:
     gateway:
-      mvc:
         routes:
           - id: "order-service"
             uri: "http://localhost:8081"
