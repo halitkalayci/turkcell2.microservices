@@ -6,7 +6,7 @@ spring:
       mvc:
         routes:
           - id: "order-service"
-            uri: "http://localhost:8081" #UR? DE??L SERV?S ?SM? KULLANMAK
+            uri: "http://localhost:8081"
             predicates:
               - "Path=/api/v1/orders/**"
           - id: "customer-service"
@@ -19,8 +19,13 @@ spring:
               - "Path=/api/v1/cart/**"
 
 server:
-  port: 8080
+  port: 8085
 
-
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8888/eureka/"
+    register-with-eureka: true
+    fetch-registry: true
 
 #ctrl shift f
