@@ -5,15 +5,15 @@ spring:
     gateway:
         routes:
           - id: "order-service"
-            uri: "http://localhost:8081"
+            uri: "lb://order-service" #lb->load-balancing
             predicates:
               - "Path=/api/v1/orders/**"
           - id: "customer-service"
-            uri: "http://localhost:8083"
+            uri: "lb://customer-service"
             predicates:
               - "Path=/api/v1/customers/**"
           - id: "cart-service"
-            uri: "http://localhost:8082"
+            uri: "lb://cart-service"
             predicates:
               - "Path=/api/v1/cart/**"
 

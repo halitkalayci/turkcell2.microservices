@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CartController {
     @GetMapping
     public String get() {
+        System.out.println("get called");
         return "Cart Service";
     }
 }
