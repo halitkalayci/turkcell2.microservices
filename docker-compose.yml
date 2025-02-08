@@ -8,6 +8,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=test
       - POSTGRES_DB=postgres
+    volumes:
+      - pg1_data:/var/lib/postgresql/data
   pg-2:
     image: postgres
     container_name: "pg-2"
@@ -17,6 +19,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=test
       - POSTGRES_DB=postgres
+    volumes:
+      - pg2_data:/var/lib/postgresql/data
   kafka:
     image: bitnami/kafka
     ports:
@@ -35,3 +39,11 @@ services:
       - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
       - BITNAMI_DEBUG=yes
       - KAFKA_CFG_NUM_PARTITIONS=2
+volumes:
+  pg1_data:
+  pg2_data:
+
+
+# MQ sistemleri hakkında ve kafka hakkında bir medium yazısı oluşturmak.
+
+# Projedeki servicelerin bağımsız ER diagramlarını oluşturalım. (PAİR)
