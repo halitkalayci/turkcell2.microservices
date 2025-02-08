@@ -16,6 +16,10 @@ spring:
             uri: "lb://cart-service"
             predicates:
               - "Path=/api/v1/cart/**"
+          - id: "product-service"
+            uri: "lb://product-service"
+            predicates:
+              - "Path=/api/v1/products/**"
 
 server:
   port: 8085
