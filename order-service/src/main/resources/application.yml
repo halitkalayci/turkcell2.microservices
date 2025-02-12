@@ -3,6 +3,7 @@ spring:
     name: "order-service"
   cloud:
     stream:
+      defaultBinder: kafka
       function:
         definition: orderCreatedFunction
       bindings:
