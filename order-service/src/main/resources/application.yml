@@ -1,6 +1,18 @@
 spring:
   application:
     name: "order-service"
+  cloud:
+    stream:
+      function:
+        definition: orderCreatedFunction
+      bindings:
+        orderCreatedFunction-out-0:
+          destination: order-topic
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
+
 
 server:
   port: 8081
