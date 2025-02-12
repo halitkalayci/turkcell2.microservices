@@ -11,3 +11,9 @@ public class CartServiceApplication {
     }
 
 }
+
+// Common paket(ler)i nasıl implemente edilir yolları nelerdir?
+// Size mantıklı geleni projemize implente etmeye çalışalım.
+
+// Parent project
+// Bağımsız repository projesi + 1
