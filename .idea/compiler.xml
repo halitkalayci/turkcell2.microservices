@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gateway-server" />
+        <module name="turkcell-t2" />
         <module name="discovery-server" />
       </profile>
       <profile name="Annotation profile for cart-service" enabled="true">
