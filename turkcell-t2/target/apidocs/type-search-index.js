@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"io.github.halitkalayci","l":"Main"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"io.github.halitkalayci","l":"Main"},{"p":"io.github.halitkalayci.event.order","l":"OrderCreatedEvent"}];updateSearchResults();

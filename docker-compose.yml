@@ -39,6 +39,11 @@ services:
       - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
       - BITNAMI_DEBUG=yes
       - KAFKA_CFG_NUM_PARTITIONS=2
+  order-service:
+    image: turkcell-order-service
+    container_name: order_service
+    ports:
+      - "8081:8081"
 volumes:
   pg1_data:
   pg2_data:
