@@ -46,6 +46,13 @@ services:
       - "8081:8081"
     environment:
       SPRING_DATASOURCE_URL: "jdbc:postgresql://pg-1:5432/order-service"
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
 volumes:
   pg1_data:
   pg2_data:

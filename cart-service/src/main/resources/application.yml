@@ -1,6 +1,9 @@
 spring:
   application:
     name: "cart-service"
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/cart-service?authSource=admin
   cloud:
     stream:
       defaultBinder: kafka
