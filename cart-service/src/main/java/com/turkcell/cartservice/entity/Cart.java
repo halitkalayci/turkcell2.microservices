@@ -9,7 +9,7 @@ public class Cart {
     private String id;
     private String customerFullName;
     private float totalPrice;
-
+    private Product product;
     public Cart() {
     }
 
