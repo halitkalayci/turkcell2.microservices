@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "config-server"
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/halitkalayci/turkcell-microservice-configs.git"
+          default-label: master
+server:
+  port: 8079
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  enpoint:
+    health:
+      show-details: always

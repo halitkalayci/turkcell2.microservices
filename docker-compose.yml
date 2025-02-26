@@ -11,17 +11,6 @@ services:
       - POSTGRES_DB=postgres
     volumes:
       - pg1_data:/var/lib/postgresql/data
-  pg-2:
-    image: postgres
-    container_name: "pg-2"
-    ports:
-      - "5436:5432"
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=test
-      - POSTGRES_DB=postgres
-    volumes:
-      - pg2_data:/var/lib/postgresql/data
   kafka:
     image: bitnami/kafka
     ports:
@@ -42,11 +31,27 @@ services:
       - KAFKA_CFG_NUM_PARTITIONS=2
   order-service:
     image: turkcell-order-service
-    container_name: order_service
+    container_name: order-service
+    restart: always
+    depends_on:
+      config-server:
+        condition: service_healthy
     ports:
       - "8081:8081"
     environment:
-      SPRING_DATASOURCE_URL: "jdbc:postgresql://pg-1:5432/order-service"
+      SPRING_CLOUD_CONFIG_PROFILE: "dev"
+      CONFIGURL: "http://config-server:8079"
+  config-server:
+    image: turkcell-config-server
+    container_name: config-server
+    ports:
+      - "8079:8079"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8079/actuator/health"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+      timeout: 5s
   mongo:
     image: mongo
     ports:
