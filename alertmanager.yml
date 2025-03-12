@@ -1,6 +1,6 @@
 global:
   resolve_timeout: 5m
-  smtp_smarthost: "localhost:25" # Canlı bir sistemde bu değiştirilecek
+  smtp_smarthost: "papercut-smtp:25" # Canlı bir sistemde bu değiştirilecek
   smtp_from: "alertmanager@example.com"
   smtp_auth_username: "alertmanager"
   smtp_auth_password: "alertmanager"

@@ -1,4 +1,3 @@
-
 services:
   pg-1:
     image: postgres
@@ -52,6 +51,13 @@ services:
       retries: 5
       start_period: 10s
       timeout: 5s
+  papercut-smtp:
+    image: jijiechen/papercut
+    container_name: papercut-smtp
+    ports:
+      - "25:25"      # SMTP portu
+      - "37408:37408" # Web arayüzü portu
+    restart: always
   mongo:
     image: mongo
     ports:
@@ -72,9 +78,22 @@ services:
       - 9093:9093
     volumes:
       - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
 volumes:
   pg1_data:
   pg2_data:
+  grafana_data:
 
 
 # MQ sistemleri hakkında ve kafka hakkında bir medium yazısı oluşturmak.
