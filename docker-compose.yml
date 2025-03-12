@@ -70,6 +70,7 @@ services:
     ports:
       - 9090:9090
     volumes:
+      - prometheus_data:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./alert.rules.yml:/etc/prometheus/alert.rules.yml
   alertmanager:
@@ -94,6 +95,7 @@ volumes:
   pg1_data:
   pg2_data:
   grafana_data:
+  prometheus_data:
 
 
 # MQ sistemleri hakkında ve kafka hakkında bir medium yazısı oluşturmak.
