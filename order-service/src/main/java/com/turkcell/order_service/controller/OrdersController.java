@@ -15,6 +15,7 @@ import java.time.LocalDate;
 public class OrdersController {
     private final ProductClient productClient;
     private final StreamBridge streamBridge;
+
     public OrdersController(ProductClient productClient, StreamBridge streamBridge) {
         this.productClient = productClient;
         this.streamBridge = streamBridge;
@@ -22,14 +23,9 @@ public class OrdersController {
 
     @GetMapping
     public String get() {
-        // Syncİletişim
-        //String response = productClient.get();
-        //System.out.println(response);
+        String response = productClient.get();
+        System.out.println(response);    
 
-        OrderCreatedEvent orderCreatedEvent = new
-                OrderCreatedEvent("abc123", LocalDate.now());
-
-        streamBridge.send("orderCreatedFunction-out-0", orderCreatedEvent);
         return "Order Service";
     }
 }

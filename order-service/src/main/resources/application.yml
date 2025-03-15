@@ -8,3 +8,23 @@ spring:
       profile: local
   config:
     import: configserver:${configurl}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  enpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: "http://localhost:9411/api/v2/spans"
