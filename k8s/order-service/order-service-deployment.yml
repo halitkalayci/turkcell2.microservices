@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service
+  labels:
+    app: order-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-service
+  template:
+    metadata:
+      labels:
+        app: order-service
+    spec:
+      containers:
+        - name: order-service
+          image: halitkalayci/turkcell-order-service
+          ports:
+            - containerPort: 8083
+          env:
+            - name: CONFIGURL
+              value: http://config-server:8079
+            - name: SPRING_CLOUD_CONFIG_PROFILE
+              value: prod
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order-service
+  ports:
+    - port: 8083
+      targetPort: 8083
+      nodePort: 30903
+  type: NodePort 

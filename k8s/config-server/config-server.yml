@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-server-config
+  namespace: default
+data:
+  MANAGEMENT_ZIPKIN_TRACING_ENDPOINT: http://zipkin:9411/api/v2/spans
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-server
+  namespace: default
+  labels:
+    app: config-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: config-server
+  template:
+    metadata:
+      labels:
+        app: config-server
+    spec:
+      containers:
+        - name: config-server
+          image: halitkalayci/turkcell-config-server:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8079
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+          envFrom:
+            - configMapRef:
+                name: config-server-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: config-server
+  namespace: default
+spec:
+  selector:
+    app: config-server
+  ports:
+    - protocol: TCP
+      port: 8079
+      targetPort: 8079
+      nodePort: 30902
+  type: NodePort 

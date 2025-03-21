@@ -1,7 +1,6 @@
 package com.turkcell.customer_service.rules;
 
 import com.turkcell.customer_service.entity.Customer;
-import io.github.halitkalayci.exception.BusinessException;
 import com.turkcell.customer_service.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -20,19 +19,19 @@ public class CustomerBusinessRules {
 
     public void checkIfEmailExists(String email) {
         if (customerRepository.existsByEmail(email)) {
-            throw new BusinessException("Email already exists: " + email);
+            throw new RuntimeException("Email already exists: " + email);
         }
     }
 
     public void checkIfEmailExistsForUpdate(String currentEmail, String newEmail) {
         if (!currentEmail.equals(newEmail) && customerRepository.existsByEmail(newEmail)) {
-            throw new BusinessException("Email already exists: " + newEmail);
+            throw new RuntimeException("Email already exists: " + newEmail);
         }
     }
 
     public void checkIfCustomerExistsById(UUID id) {
         if (!customerRepository.existsById(id)) {
-            throw new BusinessException("Customer not found with id: " + id);
+            throw new RuntimeException("Customer not found with id: " + id);
         }
     }
 
@@ -40,18 +39,18 @@ public class CustomerBusinessRules {
         // This is used when we need to make sure a customer with given ID does NOT
         // exist
         if (customerRepository.existsById(id)) {
-            throw new BusinessException("Customer already exists with id: " + id);
+            throw new RuntimeException("Customer already exists with id: " + id);
         }
     }
 
     public Customer findCustomerByIdOrThrow(UUID id) {
         return customerRepository.findById(id)
-                .orElseThrow(() -> new BusinessException("Customer not found with id: " + id));
+                .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
     }
 
     public Customer findCustomerByEmailOrThrow(String email) {
         return customerRepository.findByEmail(email)
-                .orElseThrow(() -> new BusinessException("Customer not found with email: " + email));
+                .orElseThrow(() -> new RuntimeException("Customer not found with email: " + email));
     }
 
     public void validatePhoneNumberIfPresent(String phone) {
@@ -65,7 +64,7 @@ public class CustomerBusinessRules {
 
         // Check if it matches the Turkish phone number pattern
         if (!TURKISH_PHONE_PATTERN.matcher(cleaned).matches()) {
-            throw new BusinessException("Invalid Turkish phone number format. Should be like: 05xxxxxxxxx");
+            throw new RuntimeException("Invalid Turkish phone number format. Should be like: 05xxxxxxxxx");
         }
     }
 }
