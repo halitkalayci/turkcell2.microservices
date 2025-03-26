@@ -23,8 +23,8 @@ public class OrdersController {
 
     @GetMapping
     public String get() {
-        String response = productClient.get();
-        System.out.println(response);    
+        //String response = productClient.get();
+        //System.out.println(response);    
 
         return "Order Service";
     }

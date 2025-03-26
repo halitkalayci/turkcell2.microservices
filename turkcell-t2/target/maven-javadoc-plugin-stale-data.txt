@@ -2,85 +2,115 @@
 @packages
 @argfile
 -classpath
-'C:/Users/Asus/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar;C:/Users/Asus/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar;C:/Users/Asus/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar;C:/Users/Asus/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.jar;C:/Users/Asus/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar;C:/Users/Asus/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar;C:/Users/Asus/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar;C:/Users/Asus/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar;C:/Users/Asus/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar;C:/Users/Asus/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar;C:/Users/Asus/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar;C:/Users/Asus/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar;C:/Users/Asus/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar;C:/Users/Asus/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar;C:/Users/Asus/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar;C:/Users/Asus/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar;C:/Users/Asus/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar;C:/Users/Asus/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar;C:/Users/Asus/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar;C:/Users/Asus/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar;C:/Users/Asus/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar'
+'C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar;C:/Users/PC1/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar;C:/Users/PC1/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar;C:/Users/PC1/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar;C:/Users/PC1/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar;C:/Users/PC1/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar;C:/Users/PC1/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar;C:/Users/PC1/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar;C:/Users/PC1/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar;C:/Users/PC1/.m2/repository/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.jar;C:/Users/PC1/.m2/repository/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.jar;C:/Users/PC1/.m2/repository/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar;C:/Users/PC1/.m2/repository/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-expression/6.1.2/spring-expression-6.1.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar;C:/Users/PC1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar;C:/Users/PC1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar;C:/Users/PC1/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar;C:/Users/PC1/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar;C:/Users/PC1/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar;C:/Users/PC1/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.jar;C:/Users/PC1/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar;C:/Users/PC1/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar;C:/Users/PC1/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar;C:/Users/PC1/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar;C:/Users/PC1/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar;C:/Users/PC1/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.3/jjwt-api-0.12.3.jar;C:/Users/PC1/.m2/repository/io/jsonwebtoken/jjwt-impl/0.12.3/jjwt-impl-0.12.3.jar;C:/Users/PC1/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.12.3/jjwt-jackson-0.12.3.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.7.1/jackson-databind-2.12.7.1.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.7/jackson-annotations-2.12.7.jar;C:/Users/PC1/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.7/jackson-core-2.12.7.jar'
 -encoding
 'UTF-8'
 -protected
 -source
 '21'
 -sourcepath
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java;C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/target/generated-sources/annotations'
 -author
 -bottom
 'Copyright &#169; 2025. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/target/apidocs'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/target/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'turkcell-t2 1.0.2 API'
+'turkcell-t2-2 1.0.9 API'
 -use
 -version
 -windowtitle
-'turkcell-t2 1.0.2 API'
+'turkcell-t2-2 1.0.9 API'
+io.github.halitkalayci.annotations
 io.github.halitkalayci.event.order
 io.github.halitkalayci.exception
 io.github.halitkalayci.exception.response
 io.github.halitkalayci
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/event/order/OrderCreatedEvent.java'
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/BusinessException.java'
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/GlobalExceptionHandler.java'
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/response/ErrorResponse.java'
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/response/ValidationErrorResponse.java'
-'C:/Users/Asus/Desktop/Projects/JAVA/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/Main.java'
-C:\Users\Asus\.m2\repository\org\springframework\spring-web\6.1.3\spring-web-6.1.3.jar = 1740760000199
-C:\Users\Asus\.m2\repository\org\springframework\spring-beans\6.1.3\spring-beans-6.1.3.jar = 1740760000991
-C:\Users\Asus\.m2\repository\org\springframework\spring-core\6.1.3\spring-core-6.1.3.jar = 1740760001387
-C:\Users\Asus\.m2\repository\org\springframework\spring-jcl\6.1.3\spring-jcl-6.1.3.jar = 1740760001460
-C:\Users\Asus\.m2\repository\io\micrometer\micrometer-observation\1.12.2\micrometer-observation-1.12.2.jar = 1740760001055
-C:\Users\Asus\.m2\repository\io\micrometer\micrometer-commons\1.12.2\micrometer-commons-1.12.2.jar = 1740760002588
-C:\Users\Asus\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.2\spring-boot-starter-validation-3.2.2.jar = 1740760001312
-C:\Users\Asus\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.2\spring-boot-starter-3.2.2.jar = 1740760001272
-C:\Users\Asus\.m2\repository\org\springframework\boot\spring-boot\3.2.2\spring-boot-3.2.2.jar = 1740760001719
-C:\Users\Asus\.m2\repository\org\springframework\spring-context\6.1.3\spring-context-6.1.3.jar = 1740760001666
-C:\Users\Asus\.m2\repository\org\springframework\spring-aop\6.1.3\spring-aop-6.1.3.jar = 1740760001954
-C:\Users\Asus\.m2\repository\org\springframework\spring-expression\6.1.3\spring-expression-6.1.3.jar = 1740760001937
-C:\Users\Asus\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.2\spring-boot-autoconfigure-3.2.2.jar = 1740760002184
-C:\Users\Asus\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.2\spring-boot-starter-logging-3.2.2.jar = 1740760001902
-C:\Users\Asus\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar = 1715754311276
-C:\Users\Asus\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar = 1715754312941
-C:\Users\Asus\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar = 1682426884116
-C:\Users\Asus\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar = 1715754311271
-C:\Users\Asus\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar = 1715754312505
-C:\Users\Asus\.m2\repository\org\slf4j\jul-to-slf4j\2.0.11\jul-to-slf4j-2.0.11.jar = 1740760002133
-C:\Users\Asus\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar = 1682426877888
-C:\Users\Asus\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar = 1715754313073
-C:\Users\Asus\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.18\tomcat-embed-el-10.1.18.jar = 1740760002313
-C:\Users\Asus\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar = 1715754339998
-C:\Users\Asus\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar = 1682426875522
-C:\Users\Asus\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar = 1669797333774
-C:\Users\Asus\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar = 1669797333777
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\src\main\java = 1739549504722
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\allclasses-index.html = 1740760411271
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\allpackages-index.html = 1740760411278
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\copy.svg = 1740760411467
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\element-list = 1740760410502
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\help-doc.html = 1740760411434
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\index-all.html = 1740760411405
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\index.html = 1740760411203
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\link.svg = 1740760411470
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\member-search-index.js = 1740760411292
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\module-search-index.js = 1740760411282
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\overview-summary.html = 1740760411424
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\overview-tree.html = 1740760411188
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\package-search-index.js = 1740760411286
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\script.js = 1740760411461
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\search-page.js = 1740760411482
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\search.html = 1740760411419
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\search.js = 1740760411478
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\serialized-form.html = 1740760410714
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\stylesheet.css = 1740760411446
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\tag-search-index.js = 1740760411328
-C:\Users\Asus\Desktop\Projects\JAVA\turkcell2.microservices\turkcell-t2\target\apidocs\type-search-index.js = 1740760411290
+io.github.halitkalayci.security.configuration
+io.github.halitkalayci.security.filter
+io.github.halitkalayci.security.jwt
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/annotations/EnableCore.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/event/order/OrderCreatedEvent.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/BusinessException.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/GlobalExceptionHandler.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/response/ErrorResponse.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/exception/response/ValidationErrorResponse.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/Main.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/security/configuration/BaseSecurityConfiguration.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/security/configuration/BaseSecurityService.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/security/filter/BaseJwtAuthFilter.java'
+'C:/Users/PC1/Desktop/Projects/Education/Java/turkcell2.microservices/turkcell-t2/src/main/java/io/github/halitkalayci/security/jwt/BaseJwtService.java'
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.2\spring-boot-starter-security-3.2.2.jar = 1743013820239
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.2\spring-boot-starter-3.2.2.jar = 1741797860481
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot\3.2.2\spring-boot-3.2.2.jar = 1741797860529
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.2\spring-boot-autoconfigure-3.2.2.jar = 1741797860575
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.2\spring-boot-starter-logging-3.2.2.jar = 1741797860598
+C:\Users\PC1\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar = 1741797860599
+C:\Users\PC1\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar = 1741797860608
+C:\Users\PC1\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar = 1741797860623
+C:\Users\PC1\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar = 1741797860633
+C:\Users\PC1\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar = 1741797860659
+C:\Users\PC1\.m2\repository\org\slf4j\jul-to-slf4j\2.0.11\jul-to-slf4j-2.0.11.jar = 1741797860666
+C:\Users\PC1\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar = 1737553619150
+C:\Users\PC1\.m2\repository\org\springframework\spring-core\6.1.3\spring-core-6.1.3.jar = 1741797860461
+C:\Users\PC1\.m2\repository\org\springframework\spring-jcl\6.1.3\spring-jcl-6.1.3.jar = 1741797860429
+C:\Users\PC1\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar = 1739042384878
+C:\Users\PC1\.m2\repository\org\springframework\spring-aop\6.1.3\spring-aop-6.1.3.jar = 1741797860555
+C:\Users\PC1\.m2\repository\org\springframework\spring-beans\6.1.3\spring-beans-6.1.3.jar = 1741797860468
+C:\Users\PC1\.m2\repository\org\springframework\security\spring-security-config\6.2.1\spring-security-config-6.2.1.jar = 1743013820519
+C:\Users\PC1\.m2\repository\org\springframework\security\spring-security-core\6.2.1\spring-security-core-6.2.1.jar = 1743013820454
+C:\Users\PC1\.m2\repository\org\springframework\security\spring-security-crypto\6.2.1\spring-security-crypto-6.2.1.jar = 1743013820333
+C:\Users\PC1\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar = 1743013820505
+C:\Users\PC1\.m2\repository\org\springframework\security\spring-security-web\6.2.1\spring-security-web-6.2.1.jar = 1743013820470
+C:\Users\PC1\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar = 1743013820437
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.2\spring-boot-starter-web-3.2.2.jar = 1743013906363
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.2\spring-boot-starter-json-3.2.2.jar = 1743013906407
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar = 1743013906420
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar = 1743013906495
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar = 1743013906412
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.2\spring-boot-starter-tomcat-3.2.2.jar = 1743013906405
+C:\Users\PC1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.18\tomcat-embed-core-10.1.18.jar = 1743013906720
+C:\Users\PC1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.18\tomcat-embed-websocket-10.1.18.jar = 1743013906586
+C:\Users\PC1\.m2\repository\org\springframework\spring-web\6.1.3\spring-web-6.1.3.jar = 1741797860361
+C:\Users\PC1\.m2\repository\io\micrometer\micrometer-observation\1.12.2\micrometer-observation-1.12.2.jar = 1741797860423
+C:\Users\PC1\.m2\repository\io\micrometer\micrometer-commons\1.12.2\micrometer-commons-1.12.2.jar = 1741797860419
+C:\Users\PC1\.m2\repository\org\springframework\spring-webmvc\6.1.3\spring-webmvc-6.1.3.jar = 1743013906667
+C:\Users\PC1\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.2\spring-boot-starter-validation-3.2.2.jar = 1741797860474
+C:\Users\PC1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.18\tomcat-embed-el-10.1.18.jar = 1741797860668
+C:\Users\PC1\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar = 1739042384968
+C:\Users\PC1\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar = 1737553619148
+C:\Users\PC1\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar = 1741797860691
+C:\Users\PC1\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar = 1741797860691
+C:\Users\PC1\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.3\jjwt-api-0.12.3.jar = 1739042407522
+C:\Users\PC1\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.3\jjwt-impl-0.12.3.jar = 1739042407645
+C:\Users\PC1\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.3\jjwt-jackson-0.12.3.jar = 1739042407204
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.7.1\jackson-databind-2.12.7.1.jar = 1743011333763
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.7\jackson-annotations-2.12.7.jar = 1743011333856
+C:\Users\PC1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.7\jackson-core-2.12.7.jar = 1743011333818
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\src\main\java = 1741797833351
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\generated-sources\annotations = 1743014934745
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\allclasses-index.html = 1743014938533
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\allpackages-index.html = 1743014938535
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\copy.svg = 1743014938561
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\element-list = 1743014938384
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\help-doc.html = 1743014938558
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\index-all.html = 1743014938548
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\index.html = 1743014938515
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\link.svg = 1743014938562
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\member-search-index.js = 1743014938539
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\module-search-index.js = 1743014938536
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\overview-summary.html = 1743014938553
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\overview-tree.html = 1743014938509
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\package-search-index.js = 1743014938537
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\script.js = 1743014938561
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\search-page.js = 1743014938564
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\search.html = 1743014938551
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\search.js = 1743014938563
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\serialized-form.html = 1743014938448
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\stylesheet.css = 1743014938560
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\tag-search-index.js = 1743014938539
+C:\Users\PC1\Desktop\Projects\Education\Java\turkcell2.microservices\turkcell-t2\target\apidocs\type-search-index.js = 1743014938537

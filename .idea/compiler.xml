@@ -12,7 +12,7 @@
         <module name="config-server" />
         <module name="discovery-server" />
       </profile>
-      <profile name="Annotation profile for customer-service" enabled="true">
+      <profile name="Annotation profile for order-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -22,6 +22,7 @@
         <module name="product-service" />
         <module name="cart-service" />
         <module name="order-service" />
+        <module name="identity-service" />
         <module name="customer-service" />
       </profile>
     </annotationProcessing>
@@ -33,6 +34,7 @@
       <module name="customer-service" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
+      <module name="identity-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
     </option>

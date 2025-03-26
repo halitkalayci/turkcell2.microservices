@@ -47,6 +47,11 @@
 			<artifactId>spring-cloud-starter-stream-kafka</artifactId>
 			<version>4.2.0</version>
 		</dependency>
+			<dependency>
+		<groupId>io.github.halitkalayci</groupId>
+		<artifactId>turkcell-t2-2</artifactId>
+		<version>1.0.9</version>
+	</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>

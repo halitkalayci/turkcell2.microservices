@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/product-service/pom.xml" />
         <option value="$PROJECT_DIR$/turkcell-t2/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/identity-service/pom.xml" />
       </list>
     </option>
   </component>

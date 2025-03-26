@@ -1,0 +1,5 @@
+- IdentityService projesi oluştur.
+- Db,User işlemleri.
+- Diğer tüm servislerin identityservicedeki kullanıcılarla entegre çalışması.
+- Ortak kodları Core paketinde yazmak.
+- @EnableCore annotation yazmak.
